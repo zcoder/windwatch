@@ -5,6 +5,16 @@
 
 ## Getting Started
 
+### 0. Quick install
+Just download and install **Latest** 
+[![Latest Release](https://img.shields.io/github/v/release/zcoder/windwatch)](https://github.com/zcoder/windwatch/releases/latest)
+```bash
+export DOWNLOADED_VERSION="1.0.3"
+wget https://github.com/zcoder/windwatch/releases/download/v${DOWNLOADED_VERSION}/windwatch_${DOWNLOADED_VERSION}.deb
+sudo dpkg -i windwatch_${DOWNLOADED_VERSION}.deb
+sudo apt install -f
+```
+
 ### 1. Building the Package
 
 First, you need to build the Debian package for WindWatch. This can be done using the provided `build.sh` script.
