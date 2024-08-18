@@ -1,0 +1,18 @@
+{
+    "DISPLAY": null,
+    "USER": 1000,
+    "CHECK_INTERVAL": 1,
+    "DEBUG": 1,
+    "REAL_TERMINATE": 1,
+    "RECORDS_TTL": 86400,
+    "RECORDS_TTL_CHECK_INTERVAL": 10,
+    "LOG_FILE": "/var/log/windwatch/windwatch_apps.log",
+    "WINDOWS_SETTINGS": {
+        "telegram-desktop": -1,
+        "Банки, деньги, два.+": 300,
+        "MarketTwits –": 300,
+        ".*YouTube.*Yandex.*Browser.*": 300,
+        "firefox": -1,
+        "yandex-browser": -1
+    }
+}

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "windwatch"
+version = "1.0.1"
+description = "A tool for monitoring and managing active windows on Linux."
+authors = ["zcoder <zhen.pub@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytz = "^2024.1"
+
+[tool.poetry.scripts]
+windwatch = "windwatch:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
