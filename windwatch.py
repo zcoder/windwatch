@@ -273,7 +273,7 @@ def main(config_path: str):
                             close_application(_win_pid, comment=_win_name)
                         else:
                             raise ValueError(f"No PID found for window {_win_name=} {short_current_window=}")
-                        for _run_dict in (active_windows, last_active, wids_map):
+                        for _run_dict in [active_windows, last_active, wids_map]:
                             if win_key in _run_dict: del _run_dict[win_key]
 
             if (current_time - last_ttl_check).total_seconds() > records_ttl_check_interval:
@@ -282,8 +282,8 @@ def main(config_path: str):
                                      (current_time - last_time) > ttl]
                 for window in windows_to_remove:
                     if Debug: print(f"Removing inactive window '{window}' due to TTL expiration.")
-                    for _run_dict in (active_windows, last_active, wids_map):
-                        if win_key in _run_dict: del _run_dict[win_key]
+                    for _run_dict in [active_windows, last_active, wids_map]:
+                        if win_key in _run_dict: del _run_dict[window]
 
                 # reload app config
                 print(f"Reloading app config...")
